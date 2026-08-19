@@ -209,23 +209,13 @@ async function getBotResponse(userMessage) {
 // docs/FORMULARIO.md
 // ---------------------------------------------------------
 
-// OPCIÓN A - Web3Forms (la más rápida, no requiere crear cuenta)
-// 1. Entra a https://web3forms.com
-// 2. Escribe infotechnologyassociations@gmail.com y pulsa "Create Access Key"
-// 3. Te llega la clave al correo. Pégala aquí entre las comillas:
-const WEB3FORMS_KEY = '23379121-af34-4274-be13-06a128f2dfd0';
-
-// OPCIÓN B - Formspree u otro backend propio
-// Pega la URL completa del endpoint. Ejemplo:
-// 'https://formspree.io/f/xxxxxxxx'
-const CONTACT_ENDPOINT = '';
+// Usar función serverless de Vercel
+const CONTACT_ENDPOINT = '/api/enviar-formulario';
 
 const CONTACT_EMAIL = 'infotechnologyassociations@gmail.com';
 
-// Se usa Web3Forms si hay clave; si no, el endpoint; si no, el correo del visitante.
-const ENVIO_URL = WEB3FORMS_KEY
-    ? 'https://api.web3forms.com/submit'
-    : CONTACT_ENDPOINT;
+// Endpoint del servidor
+const ENVIO_URL = CONTACT_ENDPOINT;
 
 const TIPOS_SOLICITUD = {
     'demo-pokito':    'Demostración de Pokito',
@@ -354,23 +344,13 @@ if (contactForm) {
         }
 
         try {
-            const envio = new FormData(contactForm);
-            const tipo = TIPOS_SOLICITUD[data.type] || 'Solicitud';
-
-            if (WEB3FORMS_KEY) {
-                // Campos que espera Web3Forms.
-                // OJO: no enviar 'botcheck'. Es la trampa antispam y su sola
-                // presencia hace que Web3Forms rechace el envío.
-                envio.append('access_key', WEB3FORMS_KEY);
-                envio.append('subject', tipo + ' - ' + (data.company || data.name));
-                envio.append('from_name', 'Sitio web Infotechnology');
-                envio.append('replyto', data.email);
-            }
-
             const respuesta = await fetch(ENVIO_URL, {
                 method: 'POST',
-                headers: { 'Accept': 'application/json' },
-                body: envio
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
             });
 
             let resultado = {};
