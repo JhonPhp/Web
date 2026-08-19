@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infotechnology Associations es una empresa enfocada en el desarrollo de soluciones tecnológicas para organizaciones que buscan mejorar sus procesos.">
+    <meta property="og:title" content="Nosotros - Infotechnology Associations">
+    <meta property="og:description" content="Construimos tecnología para transformar procesos.">
+    <title>Nosotros - Infotechnology Associations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%235b7fa6' width='100' height='100' rx='20'/><text x='50' y='50' font-size='38' fill='white' text-anchor='middle' dy='.35em' font-family='sans-serif' font-weight='bold'>IA</text></svg>">
+</head>
+<body class="bg-white text-slate-700">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="../index.html" class="flex items-center gap-3">
+                <span class="w-11 h-11 rounded-xl bg-[#5b7fa6] text-white grid place-items-center font-extrabold text-lg">IA</span>
+                <span class="leading-tight">
+                    <span class="block text-[13px] font-extrabold tracking-[.14em] text-slate-800">INFOTECHNOLOGY</span>
+                    <span class="block text-[11px] tracking-[.28em] text-slate-500">ASSOCIATIONS</span>
+                </span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium">
+                <a href="../index.html" class="text-slate-600 hover:text-[#5b7fa6]">Inicio</a>
+                <a href="pokito.html" class="text-slate-600 hover:text-[#5b7fa6]">Pokito</a>
+                <a href="asistia.html" class="text-slate-600 hover:text-[#5b7fa6]">Asistia</a>
+                <a href="desarrollo-medida.html" class="text-slate-600 hover:text-[#5b7fa6]">Desarrollo a medida</a>
+                <a href="nosotros.html" class="text-slate-800 font-semibold">Nosotros</a>
+                <a href="contacto.html" class="text-slate-600 hover:text-[#5b7fa6]">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden lg:inline-flex btn-pastel">Solicitar demostración</a>
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 p-2" aria-label="Abrir menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden pb-5 space-y-1">
+            <a href="../index.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Inicio</a>
+            <a href="pokito.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Pokito</a>
+            <a href="asistia.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Asistia</a>
+            <a href="desarrollo-medida.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Desarrollo a medida</a>
+            <a href="nosotros.html" class="block px-4 py-2.5 rounded-lg bg-slate-50 text-slate-800 font-semibold">Nosotros</a>
+            <a href="contacto.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Contacto</a>
+            <a href="contacto.html" class="btn-pastel w-full mt-3">Solicitar demostración</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="bg-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="animate-fade-in-up">
+            <span class="product-tag mb-6">Sobre nosotros</span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-800 leading-[1.15] mb-6">
+                Construimos tecnología<br>
+                <span class="text-[#4a6c90]">para transformar procesos.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-5 max-w-xl">
+                Infotechnology Associations es una empresa enfocada en el desarrollo de soluciones
+                tecnológicas para organizaciones que buscan mejorar sus procesos mediante software.
+            </p>
+            <p class="text-lg text-slate-600 max-w-xl">
+                Nuestro enfoque combina análisis, desarrollo, automatización e innovación para crear
+                herramientas que realmente respondan a las necesidades de nuestros clientes.
+            </p>
+        </div>
+
+        <div class="animate-float hidden lg:block">
+            <div class="rounded-2xl bg-white/85 backdrop-blur border border-white shadow-[0_30px_60px_-30px_rgba(61,79,102,.45)] p-8">
+                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-6">CÓMO TRABAJAMOS</p>
+                <div class="space-y-5">
+                    <div class="flex gap-4 items-start">
+                        <span class="w-10 h-10 rounded-xl bg-[#dbe7f5] grid place-items-center shrink-0 text-[#4a6c90] font-bold text-sm">01</span>
+                        <div>
+                            <p class="font-semibold text-slate-800 text-[15px]">Escuchamos primero</p>
+                            <p class="text-sm text-slate-500">Entendemos el proceso antes de proponer tecnología.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <span class="w-10 h-10 rounded-xl bg-[#dcdcef] grid place-items-center shrink-0 text-[#6b6b9c] font-bold text-sm">02</span>
+                        <div>
+                            <p class="font-semibold text-slate-800 text-[15px]">Construimos por etapas</p>
+                            <p class="text-sm text-slate-500">Entregas revisables, sin sorpresas al final.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <span class="w-10 h-10 rounded-xl bg-[#cfe6df] grid place-items-center shrink-0 text-[#4b7c68] font-bold text-sm">03</span>
+                        <div>
+                            <p class="font-semibold text-slate-800 text-[15px]">Acompañamos después</p>
+                            <p class="text-sm text-slate-500">El software evoluciona con la organización.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- VALORES -->
+<section class="bg-grid-light py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Valores</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
+                Lo que guía nuestro trabajo
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Innovación</h3>
+                <p class="text-slate-600 text-[15px]">Buscamos nuevas formas de resolver problemas con tecnología.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Compromiso</h3>
+                <p class="text-slate-600 text-[15px]">Nos hacemos responsables de lo que entregamos y de su funcionamiento.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dcdcef] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#6b6b9c]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Seguridad</h3>
+                <p class="text-slate-600 text-[15px]">Protegemos la información con la que trabajamos.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#f0ece5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#8a7d68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.05 3.69l1.86 3.77 4.16.61a1 1 0 01.55 1.7l-3 2.93.71 4.14a1 1 0 01-1.45 1.06L10 15.95l-3.72 1.95a1 1 0 01-1.45-1.06l.71-4.14-3-2.93a1 1 0 01.55-1.7l4.16-.61 1.86-3.77a1 1 0 011.94 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Calidad</h3>
+                <p class="text-slate-600 text-[15px]">Cuidamos el detalle en cada etapa del desarrollo.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h5M20 20v-5h-5M20 9A8 8 0 006.3 5.3L4 7m0 8a8 8 0 0013.7 3.7L20 17"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Adaptabilidad</h3>
+                <p class="text-slate-600 text-[15px]">Ajustamos la solución cuando el negocio cambia.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.5 12S6 5 12 5s9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Transparencia</h3>
+                <p class="text-slate-600 text-[15px]">Comunicamos avances, tiempos y limitaciones con claridad.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SOLUCIONES -->
+<section class="bg-dots py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Nuestro trabajo</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
+                Soluciones construidas para necesidades reales
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <article class="product-card">
+                <div class="product-card__head product-card__head--pokito">
+                    <div class="relative">
+                        <span class="product-tag mb-4">Conjuntos residenciales</span>
+                        <h3 class="text-2xl font-extrabold text-slate-800">Pokito</h3>
+                    </div>
+                </div>
+                <div class="product-card__body">
+                    <p class="text-slate-600 text-[15px]">Gestión de conjuntos residenciales: torres, apartamentos, residentes, vehículos y visitantes.</p>
+                </div>
+                <div class="product-card__footer">
+                    <a href="pokito.html" class="btn-pastel btn-pastel--ghost w-full">Conocer Pokito</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__head product-card__head--asistia">
+                    <div class="relative">
+                        <span class="product-tag mb-4">Salud · IPS</span>
+                        <h3 class="text-2xl font-extrabold text-slate-800">Asistia</h3>
+                    </div>
+                </div>
+                <div class="product-card__body">
+                    <p class="text-slate-600 text-[15px]">Gestión de turnos y atención para instituciones prestadoras de servicios de salud.</p>
+                </div>
+                <div class="product-card__footer">
+                    <a href="asistia.html" class="btn-pastel btn-pastel--ghost w-full">Conocer Asistia</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__head product-card__head--custom">
+                    <div class="relative">
+                        <span class="product-tag mb-4">A la medida</span>
+                        <h3 class="text-2xl font-extrabold text-slate-800">Desarrollos</h3>
+                    </div>
+                </div>
+                <div class="product-card__body">
+                    <p class="text-slate-600 text-[15px]">Soluciones creadas según las necesidades específicas de cada organización.</p>
+                </div>
+                <div class="product-card__footer">
+                    <a href="desarrollo-medida.html" class="btn-pastel btn-pastel--ghost w-full">Ver servicios</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-cta py-20 lg:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-5">
+            ¿Listo para transformar tus procesos?
+        </h2>
+        <p class="text-lg text-slate-600 mb-9">
+            Hablemos de tu necesidad y encontremos la solución tecnológica adecuada para tu organización.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+            <a href="contacto.html" class="btn-pastel">Solicitar demostración</a>
+            <a href="mailto:infotechnologyassociations@gmail.com" class="btn-pastel btn-pastel--ghost" style="background:#ffffff">Hablar con nosotros</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#2c3d54] text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
+        <div class="grid md:grid-cols-4 gap-6 mb-5">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-8 h-8 rounded-lg bg-[#5b7fa6] text-white grid place-items-center font-extrabold text-xs">IA</span>
+                    <span class="leading-tight">
+                        <span class="block text-[11px] font-extrabold tracking-[.14em] text-white">INFOTECHNOLOGY</span>
+                        <span class="block text-[9px] tracking-[.26em] text-slate-400">ASSOCIATIONS</span>
+                    </span>
+                </div>
+                <p class="text-xs text-slate-400">Transformamos procesos en soluciones digitales.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Software</h4>
+                <ul class="space-y-1 text-xs">
+                    <li><a href="pokito.html" class="hover:text-white">Pokito</a></li>
+                    <li><a href="asistia.html" class="hover:text-white">Asistia</a></li>
+                    <li><a href="desarrollo-medida.html" class="hover:text-white">Desarrollo a medida</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Empresa</h4>
+                <ul class="space-y-1 text-xs">
+                    <li><a href="nosotros.html" class="hover:text-white">Nosotros</a></li>
+                    <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    <li><a href="privacidad.html" class="hover:text-white">Política de privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Contacto</h4>
+                <a href="mailto:infotechnologyassociations@gmail.com" class="text-xs break-all hover:text-white">infotechnologyassociations@gmail.com</a>
+                <a href="contacto.html" class="btn-pastel btn-pastel--sm mt-2.5">Solicitar demostración</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-4">
+            <p class="text-center text-xs text-slate-400">© 2026 Infotechnology Associations. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ASISTENTE -->
+<div id="ai-chatbot" class="fixed bottom-5 right-5 z-40">
+    <button id="chat-toggle" class="w-14 h-14 rounded-full bg-[#5b7fa6] text-white shadow-lg hover:bg-[#4a6c90] grid place-items-center" aria-label="Abrir asistente">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a9.9 9.9 0 01-4.3-.9L3 20l1.4-3.7A7.7 7.7 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/>
+        </svg>
+    </button>
+    <div id="chat-box" class="hidden absolute bottom-20 right-0 w-[22rem] max-w-[calc(100vw-2.5rem)] h-96 bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden">
+        <div class="bg-[#dbe7f5] px-4 py-3.5 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-slate-800 text-[15px]">Asistente</h3>
+                <p class="text-xs text-slate-500">¿Preguntas sobre nosotros?</p>
+            </div>
+            <button id="chat-close" class="text-slate-500 hover:text-slate-800 p-1" aria-label="Cerrar">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-[#f6f9fc]">
+            <div class="bg-white rounded-xl p-3 max-w-[85%] border border-slate-100">
+                <p class="text-sm text-slate-600">Hola. Puedo contarte sobre Infotechnology Associations, cómo trabajamos y qué soluciones desarrollamos.</p>
+            </div>
+        </div>
+        <form id="chat-form" class="p-3 border-t border-slate-200 flex gap-2">
+            <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." class="flex-1 px-3.5 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#a8c6e8]">
+            <button type="submit" class="px-4 rounded-xl bg-[#5b7fa6] text-white hover:bg-[#4a6c90]" aria-label="Enviar">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

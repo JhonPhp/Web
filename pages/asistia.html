@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asistia - Software de gestión de turnos para IPS. Organiza la atención de pacientes y visualiza los llamados en tiempo real.">
+    <meta name="keywords" content="software gestión turnos, sistema de turnos IPS, llamado de pacientes, digiturno">
+    <meta property="og:title" content="Asistia | Gestión Inteligente de Turnos para IPS">
+    <meta property="og:description" content="Organiza la atención. Mejora la experiencia.">
+    <title>Asistia | Gestión de Turnos para IPS - Infotechnology Associations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%235b7fa6' width='100' height='100' rx='20'/><text x='50' y='50' font-size='38' fill='white' text-anchor='middle' dy='.35em' font-family='sans-serif' font-weight='bold'>IA</text></svg>">
+</head>
+<body class="bg-white text-slate-700">
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <a href="../index.html" class="flex items-center gap-3">
+                <span class="w-11 h-11 rounded-xl bg-[#5b7fa6] text-white grid place-items-center font-extrabold text-lg">IA</span>
+                <span class="leading-tight">
+                    <span class="block text-[13px] font-extrabold tracking-[.14em] text-slate-800">INFOTECHNOLOGY</span>
+                    <span class="block text-[11px] tracking-[.28em] text-slate-500">ASSOCIATIONS</span>
+                </span>
+            </a>
+            <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium">
+                <a href="../index.html" class="text-slate-600 hover:text-[#5b7fa6]">Inicio</a>
+                <a href="pokito.html" class="text-slate-600 hover:text-[#5b7fa6]">Pokito</a>
+                <a href="asistia.html" class="text-slate-800 font-semibold">Asistia</a>
+                <a href="desarrollo-medida.html" class="text-slate-600 hover:text-[#5b7fa6]">Desarrollo a medida</a>
+                <a href="nosotros.html" class="text-slate-600 hover:text-[#5b7fa6]">Nosotros</a>
+                <a href="contacto.html" class="text-slate-600 hover:text-[#5b7fa6]">Contacto</a>
+            </div>
+            <a href="contacto.html" class="hidden lg:inline-flex btn-pastel">Solicitar demostración</a>
+            <button id="mobile-menu-btn" class="lg:hidden text-slate-700 p-2" aria-label="Abrir menú">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden pb-5 space-y-1">
+            <a href="../index.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Inicio</a>
+            <a href="pokito.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Pokito</a>
+            <a href="asistia.html" class="block px-4 py-2.5 rounded-lg bg-slate-50 text-slate-800 font-semibold">Asistia</a>
+            <a href="desarrollo-medida.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Desarrollo a medida</a>
+            <a href="nosotros.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Nosotros</a>
+            <a href="contacto.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Contacto</a>
+            <a href="contacto.html" class="btn-pastel w-full mt-3">Solicitar demostración</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="bg-hero">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 grid lg:grid-cols-2 gap-14 items-center">
+        <div class="animate-fade-in-up">
+            <span class="product-tag mb-6">Instituciones prestadoras de salud</span>
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-slate-800 mb-4">Asistia</h1>
+            <p class="text-2xl text-[#4a6c90] font-semibold mb-5">
+                Organiza la atención. Mejora la experiencia.
+            </p>
+            <p class="text-lg text-slate-600 mb-8 max-w-xl">
+                Una solución tecnológica para gestionar turnos, organizar la atención y visualizar
+                llamados de pacientes en tiempo real.
+            </p>
+            <div class="flex flex-wrap gap-3">
+                <a href="contacto.html" class="btn-pastel">Solicitar demostración</a>
+                <a href="contacto.html" class="btn-pastel btn-pastel--ghost">Solicitar cotización</a>
+            </div>
+        </div>
+
+        <!-- Pantalla de turnos -->
+        <div class="animate-float hidden lg:block">
+            <div class="rounded-2xl bg-white/85 backdrop-blur border border-white shadow-[0_30px_60px_-30px_rgba(61,79,102,.45)] p-6">
+                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-4">PANTALLA DE SALA DE ESPERA</p>
+
+                <div class="rounded-xl bg-[#cfe6df] p-6 text-center mb-4">
+                    <p class="text-[11px] text-slate-500 tracking-wide mb-1">TURNO EN ATENCIÓN</p>
+                    <p class="text-5xl font-extrabold text-slate-800 tracking-tight">A-042</p>
+                    <p class="text-sm text-slate-600 mt-1">Módulo 3</p>
+                </div>
+
+                <p class="text-[11px] font-semibold text-slate-500 tracking-wide mb-2">SIGUIENTES</p>
+                <div class="grid grid-cols-3 gap-2.5">
+                    <div class="rounded-lg bg-[#dbe7f5] py-3 text-center">
+                        <p class="text-lg font-bold text-slate-700">A-043</p>
+                    </div>
+                    <div class="rounded-lg bg-[#dcdcef] py-3 text-center">
+                        <p class="text-lg font-bold text-slate-700">B-018</p>
+                    </div>
+                    <div class="rounded-lg bg-[#f0ece5] py-3 text-center">
+                        <p class="text-lg font-bold text-slate-700">A-044</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- FLUJO DE ATENCIÓN -->
+<section class="bg-grid-light py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Flujo de atención</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
+                Del ingreso del paciente hasta la atención
+            </h2>
+            <p class="text-lg text-slate-600">
+                Cada paso queda registrado, y el paciente siempre sabe en qué punto está.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#dbe7f5] grid place-items-center mb-4 text-[#4a6c90] font-bold text-sm">01</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Paciente</h3>
+                <p class="text-slate-500 text-sm">Llega a la institución</p>
+            </div>
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#dcdcef] grid place-items-center mb-4 text-[#6b6b9c] font-bold text-sm">02</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Genera turno</h3>
+                <p class="text-slate-500 text-sm">Según el servicio</p>
+            </div>
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#f0ece5] grid place-items-center mb-4 text-[#8a7d68] font-bold text-sm">03</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Sala de espera</h3>
+                <p class="text-slate-500 text-sm">Ve su turno en pantalla</p>
+            </div>
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#cfe6df] grid place-items-center mb-4 text-[#4b7c68] font-bold text-sm">04</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Llamado</h3>
+                <p class="text-slate-500 text-sm">En tiempo real</p>
+            </div>
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#dbe7f5] grid place-items-center mb-4 text-[#4a6c90] font-bold text-sm">05</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Módulo</h3>
+                <p class="text-slate-500 text-sm">Se dirige al punto</p>
+            </div>
+            <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
+                <div class="w-11 h-11 rounded-xl bg-[#cfe6df] grid place-items-center mb-4 text-[#4b7c68] font-bold text-sm">06</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Atención</h3>
+                <p class="text-slate-500 text-sm">Registro del cierre</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FUNCIONALIDADES -->
+<section class="bg-dots py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Funcionalidades</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
+                Lo que incluye Asistia
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Gestión de turnos</h3>
+                <p class="text-slate-600 text-[15px]">Crea y administra turnos de forma organizada.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0118 15.5V11a6 6 0 00-9-5.2V5a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2v-.5"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Llamado en tiempo real</h3>
+                <p class="text-slate-600 text-[15px]">Visualiza los llamados desde las pantallas.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dcdcef] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#6b6b9c]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Pantallas y app para TV</h3>
+                <p class="text-slate-600 text-[15px]">Muestra turnos y llamados en televisores o pantallas.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#f0ece5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#8a7d68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.5 0 1 .2 1.4.6l7 7a2 2 0 010 2.8l-7 7a2 2 0 01-2.8 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Múltiples servicios</h3>
+                <p class="text-slate-600 text-[15px]">Administra diferentes servicios y módulos de atención.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Múltiples sedes</h3>
+                <p class="text-slate-600 text-[15px]">Para organizaciones que administran varias sedes.</p>
+            </article>
+
+            <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
+                <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
+                    <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6H5v6h4zm6 0V5h-4v14h4zm6 0v-9h-4v9h4z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Estadísticas</h3>
+                <p class="text-slate-600 text-[15px]">Información sobre la atención y el comportamiento de los turnos.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- SEGURIDAD -->
+<section class="bg-ai py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="rounded-2xl bg-white/85 backdrop-blur border border-white p-8 order-2 lg:order-1">
+                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-5">CONTROL DE ACCESO POR ROL</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
+                        <span class="w-9 h-9 rounded-lg bg-[#dbe7f5] grid place-items-center text-[#4a6c90] text-xs font-bold shrink-0">AD</span>
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-slate-700">Administrador</p>
+                            <p class="text-xs text-slate-500">Configuración, sedes y reportes</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
+                        <span class="w-9 h-9 rounded-lg bg-[#cfe6df] grid place-items-center text-[#4b7c68] text-xs font-bold shrink-0">MO</span>
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-slate-700">Módulo de atención</p>
+                            <p class="text-xs text-slate-500">Llamar y cerrar turnos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
+                        <span class="w-9 h-9 rounded-lg bg-[#dcdcef] grid place-items-center text-[#6b6b9c] text-xs font-bold shrink-0">RE</span>
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-slate-700">Recepción</p>
+                            <p class="text-xs text-slate-500">Generar turnos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
+                        <span class="w-9 h-9 rounded-lg bg-[#f0ece5] grid place-items-center text-[#8a7d68] text-xs font-bold shrink-0">PA</span>
+                        <div class="flex-1">
+                            <p class="text-sm font-semibold text-slate-700">Pantalla</p>
+                            <p class="text-xs text-slate-500">Solo visualización</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2">
+                <span class="product-tag mb-4" style="background:rgba(255,255,255,.75)">Seguridad de la información</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-5">
+                    Cada usuario ve solo lo que le corresponde
+                </h2>
+                <p class="text-lg text-slate-600 mb-6">
+                    En una institución de salud la información es sensible. Asistia aplica buenas prácticas
+                    de seguridad y limita el acceso según el rol de cada persona.
+                </p>
+                <ul class="feature-list">
+                    <li>Perfiles y permisos diferenciados por rol</li>
+                    <li>Administración independiente por sede</li>
+                    <li>Registro de las operaciones realizadas</li>
+                    <li>Cifrado de la información en tránsito</li>
+                    <li>Copias de seguridad periódicas</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BENEFICIO -->
+<section class="bg-mint py-20 lg:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="product-tag mb-5" style="background:#ffffff;border-color:#cfe6df">El resultado</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-6">
+            Menos espera. Mejor organización. Mayor control de la atención.
+        </h2>
+        <p class="text-lg text-slate-600">
+            El paciente sabe en qué punto está y el equipo tiene visibilidad de toda la operación
+            en tiempo real, sin depender de listas en papel ni de llamados a viva voz.
+        </p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-cta py-20 lg:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-5">
+            Lleva la gestión de turnos de tu institución al siguiente nivel
+        </h2>
+        <p class="text-lg text-slate-600 mb-9">
+            Solicita una demostración y te mostramos cómo se adapta Asistia a tus servicios y sedes.
+        </p>
+        <div class="flex flex-wrap gap-3 justify-center">
+            <a href="contacto.html" class="btn-pastel">Solicitar demostración</a>
+            <a href="mailto:infotechnologyassociations@gmail.com" class="btn-pastel btn-pastel--ghost" style="background:#ffffff">Hablar con nosotros</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-[#2c3d54] text-slate-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-7">
+        <div class="grid md:grid-cols-4 gap-6 mb-5">
+            <div>
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="w-8 h-8 rounded-lg bg-[#5b7fa6] text-white grid place-items-center font-extrabold text-xs">IA</span>
+                    <span class="leading-tight">
+                        <span class="block text-[11px] font-extrabold tracking-[.14em] text-white">INFOTECHNOLOGY</span>
+                        <span class="block text-[9px] tracking-[.26em] text-slate-400">ASSOCIATIONS</span>
+                    </span>
+                </div>
+                <p class="text-xs text-slate-400">Transformamos procesos en soluciones digitales.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Software</h4>
+                <ul class="space-y-1 text-xs">
+                    <li><a href="pokito.html" class="hover:text-white">Pokito</a></li>
+                    <li><a href="asistia.html" class="hover:text-white">Asistia</a></li>
+                    <li><a href="desarrollo-medida.html" class="hover:text-white">Desarrollo a medida</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Empresa</h4>
+                <ul class="space-y-1 text-xs">
+                    <li><a href="nosotros.html" class="hover:text-white">Nosotros</a></li>
+                    <li><a href="contacto.html" class="hover:text-white">Contacto</a></li>
+                    <li><a href="privacidad.html" class="hover:text-white">Política de privacidad</a></li>
+                    <li><a href="terminos.html" class="hover:text-white">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold text-white text-xs uppercase tracking-wide mb-2">Contacto</h4>
+                <a href="mailto:infotechnologyassociations@gmail.com" class="text-xs break-all hover:text-white">infotechnologyassociations@gmail.com</a>
+                <a href="contacto.html" class="btn-pastel btn-pastel--sm mt-2.5">Solicitar demostración</a>
+            </div>
+        </div>
+        <div class="border-t border-white/10 pt-4">
+            <p class="text-center text-xs text-slate-400">© 2026 Infotechnology Associations. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- ASISTENTE -->
+<div id="ai-chatbot" class="fixed bottom-5 right-5 z-40">
+    <button id="chat-toggle" class="w-14 h-14 rounded-full bg-[#5b7fa6] text-white shadow-lg hover:bg-[#4a6c90] grid place-items-center" aria-label="Abrir asistente">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.4-4 8-9 8a9.9 9.9 0 01-4.3-.9L3 20l1.4-3.7A7.7 7.7 0 013 12c0-4.4 4-8 9-8s9 3.6 9 8z"/>
+        </svg>
+    </button>
+    <div id="chat-box" class="hidden absolute bottom-20 right-0 w-[22rem] max-w-[calc(100vw-2.5rem)] h-96 bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden">
+        <div class="bg-[#dbe7f5] px-4 py-3.5 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-slate-800 text-[15px]">Asistente</h3>
+                <p class="text-xs text-slate-500">¿Preguntas sobre Asistia?</p>
+            </div>
+            <button id="chat-close" class="text-slate-500 hover:text-slate-800 p-1" aria-label="Cerrar">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-[#f6f9fc]">
+            <div class="bg-white rounded-xl p-3 max-w-[85%] border border-slate-100">
+                <p class="text-sm text-slate-600">Hola. Puedo contarte sobre la gestión de turnos, las pantallas, el manejo de sedes o cómo solicitar una demostración.</p>
+            </div>
+        </div>
+        <form id="chat-form" class="p-3 border-t border-slate-200 flex gap-2">
+            <input type="text" id="chat-input" placeholder="Escribe tu pregunta..." class="flex-1 px-3.5 py-2.5 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-[#a8c6e8]">
+            <button type="submit" class="px-4 rounded-xl bg-[#5b7fa6] text-white hover:bg-[#4a6c90]" aria-label="Enviar">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
