@@ -278,6 +278,10 @@ body {
     background: linear-gradient(150deg, #dcdcef 0%, #cfe6df 60%, #e2ecf6 100%);
 }
 
+.product-card__head--arthemis {
+    background: linear-gradient(150deg, #e6dcef 0%, #dcdcef 55%, #dbe7f5 100%);
+}
+
 .product-card__head--custom {
     background: linear-gradient(150deg, #f0ece5 0%, #e6e6f2 60%, #dbe7f5 100%);
 }

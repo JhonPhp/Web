@@ -11,6 +11,7 @@ PAGINAWEB/
 ├── pages/
 │   ├── pokito.html        # Página del producto Pokito
 │   ├── asistia.html       # Página del producto Asistia
+│   ├── arthemis.html      # Página del producto Arthemis
 │   ├── desarrollo-medida.html  # Página de desarrollo personalizado
 │   ├── nosotros.html      # Página Nosotros
 │   ├── contacto.html      # Página de Contacto
@@ -47,6 +48,7 @@ PAGINAWEB/
 ### ✅ Múltiples Productos
 - **Pokito**: Gestión de conjuntos residenciales
 - **Asistia**: Gestión de turnos para IPS
+- **Arthemis**: Gestión para laboratorios clínicos
 - **Desarrollo a Medida**: Soluciones personalizadas con IA
 
 ### ✅ Optimización SEO
@@ -122,6 +124,12 @@ El logo está en texto en el navbar. Para agregar un logo gráfico:
 - Seguridad HIPAA
 - Beneficios y estadísticas
 
+### 🧪 Arthemis (pages/arthemis.html)
+- Sistema de gestión para laboratorios clínicos
+- Flujo de la muestra, de la orden al resultado liberado
+- Control de acceso por rol y por sede
+- Reglas de negocio (validación cruzada, alertas críticas, etc.)
+
 ### 🛠️ Desarrollo a Medida (pages/desarrollo-medida.html)
 - Servicios disponibles
 - Proceso de desarrollo
@@ -149,6 +157,7 @@ El logo está en texto en el navbar. Para agregar un logo gráfico:
 El chatbot está configurado con respuestas predefinidas basadas en:
 - Información sobre Pokito
 - Información sobre Asistia
+- Información sobre Arthemis
 - Información sobre desarrollo a medida
 - Solicitudes de demostración
 - Contacto

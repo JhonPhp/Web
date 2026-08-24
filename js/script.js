@@ -53,6 +53,21 @@ const botKnowledge = {
         benefits: "Menos espera, mejor organización, mayor control de la atención",
         url: "asistia.html"
     },
+    arthemis: {
+        name: "Arthemis",
+        description: "Sistema de gestión para laboratorios clínicos",
+        features: [
+            "Órdenes, muestras y resultados",
+            "Permisos por rol y por sede",
+            "Validación cruzada de resultados",
+            "Control de calidad y bloqueo de exámenes",
+            "Interfaz con equipos de laboratorio",
+            "Facturación y RIPS",
+            "Trazabilidad y auditoría completa"
+        ],
+        benefits: "Menos riesgo operativo, trazabilidad completa, control real por sede",
+        url: "arthemis.html"
+    },
     empresa: {
         name: "Infotechnology Associations",
         description: "Empresa de desarrollo de software",
@@ -157,6 +172,19 @@ async function getBotResponse(userMessage) {
         return `Asistia es nuestro software para gestión de turnos en IPS. ${botKnowledge.asistia.benefits}. ¿Te gustaría solicitar una demostración?`;
     }
 
+    if (lowerMessage.includes('arthemis')) {
+        if (lowerMessage.includes('características') || lowerMessage.includes('funciones')) {
+            return `Arthemis incluye: ${botKnowledge.arthemis.features.slice(0, 3).join(', ')} y más. ¿Quieres conocer todas sus funciones?`;
+        }
+        if (lowerMessage.includes('rol') || lowerMessage.includes('permiso') || lowerMessage.includes('acceso')) {
+            return `Arthemis define trece roles distintos, cada uno con el conjunto exacto de permisos que necesita. El servidor comprueba el permiso y la sede en cada petición.`;
+        }
+        if (lowerMessage.includes('laboratorio') || lowerMessage.includes('clínico') || lowerMessage.includes('lis')) {
+            return `Arthemis está diseñado específicamente para laboratorios clínicos: gestiona órdenes, muestras, resultados, calidad y facturación de principio a fin.`;
+        }
+        return `Arthemis es nuestro software para laboratorios clínicos. ${botKnowledge.arthemis.benefits}. ¿Te gustaría solicitar una demostración?`;
+    }
+
     if (lowerMessage.includes('desarrollo a medida') || lowerMessage.includes('personalizado')) {
         return `Realizamos desarrollo de software completamente personalizado. Ofrecemos aplicaciones web, móviles, automatización, integraciones y más. ¿Cuál es tu necesidad específica?`;
     }
@@ -174,7 +202,7 @@ async function getBotResponse(userMessage) {
     }
 
     if (lowerMessage.includes('ayuda') || lowerMessage.includes('ayudar') || lowerMessage.includes('puedo') || lowerMessage.includes('puedes')) {
-        return `¡Claro que sí! Puedo ayudarte con:\n- Información sobre Pokito\n- Información sobre Asistia\n- Desarrollo de software a medida\n- Solicitudes de demostración\n- Preguntas generales\n\n¿Qué necesitas?`;
+        return `¡Claro que sí! Puedo ayudarte con:\n- Información sobre Pokito\n- Información sobre Asistia\n- Información sobre Arthemis\n- Desarrollo de software a medida\n- Solicitudes de demostración\n- Preguntas generales\n\n¿Qué necesitas?`;
     }
 
     if (lowerMessage.includes('gracias') || lowerMessage.includes('thanks')) {
@@ -182,7 +210,7 @@ async function getBotResponse(userMessage) {
     }
 
     // Respuesta general si no coincide con palabras clave
-    return `Interesante pregunta. Puedo ayudarte con información sobre:\n\n✓ Nuestros productos (Pokito, Asistia)\n✓ Desarrollo de software a medida\n✓ Solicitudes de demostración\n✓ Información de contacto\n\n¿Hay algo específico que quieras saber?`;
+    return `Interesante pregunta. Puedo ayudarte con información sobre:\n\n✓ Nuestros productos (Pokito, Asistia, Arthemis)\n✓ Desarrollo de software a medida\n✓ Solicitudes de demostración\n✓ Información de contacto\n\n¿Hay algo específico que quieras saber?`;
 }
 
 // Formulario de contacto (si existe en la página)
@@ -220,6 +248,7 @@ const ENVIO_URL = CONTACT_ENDPOINT;
 const TIPOS_SOLICITUD = {
     'demo-pokito':    'Demostración de Pokito',
     'demo-asistia':   'Demostración de Asistia',
+    'demo-arthemis':  'Demostración de Arthemis',
     'desarrollo':     'Desarrollo de software a medida',
     'automatizacion': 'Automatización de procesos',
     'integracion':    'Integración / API',

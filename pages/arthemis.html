@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Asistia - Software de gestión de turnos para IPS. Organiza la atención de pacientes y visualiza los llamados en tiempo real.">
-    <meta name="keywords" content="software gestión turnos, sistema de turnos IPS, llamado de pacientes, digiturno">
-    <meta property="og:title" content="Asistia | Gestión Inteligente de Turnos para IPS">
-    <meta property="og:description" content="Organiza la atención. Mejora la experiencia.">
-    <title>Asistia | Gestión de Turnos para IPS - Infotechnology Associations</title>
+    <meta name="description" content="Arthemis - Sistema de gestión para laboratorios clínicos. Órdenes, muestras, resultados, calidad y facturación con control de acceso por rol y sede.">
+    <meta name="keywords" content="software laboratorio clínico, sistema LIS, gestión de resultados de laboratorio, control de calidad laboratorio, RIPS, software bacteriología">
+    <meta property="og:title" content="Arthemis | Gestión para Laboratorios Clínicos">
+    <meta property="og:description" content="El permiso decide el acceso. Nunca la pantalla.">
+    <title>Arthemis | Sistema de Gestión para Laboratorio Clínico - Infotechnology Associations</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,8 +31,8 @@
             <div class="hidden lg:flex items-center gap-8 text-[15px] font-medium">
                 <a href="../index.html" class="text-slate-600 hover:text-[#5b7fa6]">Inicio</a>
                 <a href="pokito.html" class="text-slate-600 hover:text-[#5b7fa6]">Pokito</a>
-                <a href="asistia.html" class="text-slate-800 font-semibold">Asistia</a>
-                <a href="arthemis.html" class="text-slate-600 hover:text-[#5b7fa6]">Arthemis</a>
+                <a href="asistia.html" class="text-slate-600 hover:text-[#5b7fa6]">Asistia</a>
+                <a href="arthemis.html" class="text-slate-800 font-semibold">Arthemis</a>
                 <a href="desarrollo-medida.html" class="text-slate-600 hover:text-[#5b7fa6]">Desarrollo a medida</a>
                 <a href="nosotros.html" class="text-slate-600 hover:text-[#5b7fa6]">Nosotros</a>
                 <a href="contacto.html" class="text-slate-600 hover:text-[#5b7fa6]">Contacto</a>
@@ -47,8 +47,8 @@
         <div id="mobile-menu" class="hidden lg:hidden pb-5 space-y-1">
             <a href="../index.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Inicio</a>
             <a href="pokito.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Pokito</a>
-            <a href="asistia.html" class="block px-4 py-2.5 rounded-lg bg-slate-50 text-slate-800 font-semibold">Asistia</a>
-            <a href="arthemis.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Arthemis</a>
+            <a href="asistia.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Asistia</a>
+            <a href="arthemis.html" class="block px-4 py-2.5 rounded-lg bg-slate-50 text-slate-800 font-semibold">Arthemis</a>
             <a href="desarrollo-medida.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Desarrollo a medida</a>
             <a href="nosotros.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Nosotros</a>
             <a href="contacto.html" class="block px-4 py-2.5 rounded-lg text-slate-700 hover:bg-slate-50">Contacto</a>
@@ -61,14 +61,14 @@
 <header class="bg-hero">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 grid lg:grid-cols-2 gap-14 items-center">
         <div class="animate-fade-in-up">
-            <span class="product-tag mb-6">Instituciones prestadoras de salud</span>
-            <h1 class="text-5xl sm:text-6xl font-extrabold text-slate-800 mb-4">Asistia</h1>
+            <span class="product-tag mb-6">Laboratorios clínicos</span>
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-slate-800 mb-4">Arthemis</h1>
             <p class="text-2xl text-[#4a6c90] font-semibold mb-5">
-                Organiza la atención. Mejora la experiencia.
+                El permiso decide el acceso. Nunca la pantalla.
             </p>
             <p class="text-lg text-slate-600 mb-8 max-w-xl">
-                Una solución tecnológica para gestionar turnos, organizar la atención y visualizar
-                llamados de pacientes en tiempo real.
+                Sistema de gestión para laboratorios clínicos: órdenes, muestras, resultados, control de calidad,
+                equipos y facturación, con permisos por rol y por sede que se verifican en el servidor en cada petición.
             </p>
             <div class="flex flex-wrap gap-3">
                 <a href="contacto.html" class="btn-pastel">Solicitar demostración</a>
@@ -76,27 +76,30 @@
             </div>
         </div>
 
-        <!-- Pantalla de turnos -->
+        <!-- Panel de control de acceso -->
         <div class="animate-float hidden lg:block">
             <div class="rounded-2xl bg-white/85 backdrop-blur border border-white shadow-[0_30px_60px_-30px_rgba(61,79,102,.45)] p-6">
-                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-4">PANTALLA DE SALA DE ESPERA</p>
+                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-4">RESULTADOS · PENDIENTES DE VALIDAR</p>
 
-                <div class="rounded-xl bg-[#cfe6df] p-6 text-center mb-4">
-                    <p class="text-[11px] text-slate-500 tracking-wide mb-1">TURNO EN ATENCIÓN</p>
-                    <p class="text-5xl font-extrabold text-slate-800 tracking-tight">A-042</p>
-                    <p class="text-sm text-slate-600 mt-1">Módulo 3</p>
+                <div class="rounded-xl bg-[#dcdcef] p-5 mb-4">
+                    <div class="flex items-center justify-between mb-1">
+                        <p class="text-[11px] text-slate-500 tracking-wide">ORDEN 10452 · HEMOGRAMA</p>
+                        <span class="text-[10px] font-bold text-[#6b6b9c] bg-white/70 rounded-full px-2 py-0.5">Procesado</span>
+                    </div>
+                    <p class="text-sm text-slate-600">Procesó: J. Ramírez · requiere validador distinto</p>
                 </div>
 
-                <p class="text-[11px] font-semibold text-slate-500 tracking-wide mb-2">SIGUIENTES</p>
-                <div class="grid grid-cols-3 gap-2.5">
-                    <div class="rounded-lg bg-[#dbe7f5] py-3 text-center">
-                        <p class="text-lg font-bold text-slate-700">A-043</p>
+                <p class="text-[11px] font-semibold text-slate-500 tracking-wide mb-2">CONTROL DE ACCESO</p>
+                <div class="space-y-2">
+                    <div class="flex items-center gap-3 rounded-lg bg-[#f6f9fc] px-3 py-2.5">
+                        <span class="w-7 h-7 rounded-md bg-[#cfe6df] grid place-items-center text-[#4b7c68] text-[10px] font-bold shrink-0">BA</span>
+                        <span class="text-xs text-slate-600 flex-1">Bacteriólogo · valida</span>
+                        <span class="text-[10px] text-slate-400">Sede Norte</span>
                     </div>
-                    <div class="rounded-lg bg-[#dcdcef] py-3 text-center">
-                        <p class="text-lg font-bold text-slate-700">B-018</p>
-                    </div>
-                    <div class="rounded-lg bg-[#f0ece5] py-3 text-center">
-                        <p class="text-lg font-bold text-slate-700">A-044</p>
+                    <div class="flex items-center gap-3 rounded-lg bg-[#f6f9fc] px-3 py-2.5">
+                        <span class="w-7 h-7 rounded-md bg-[#dbe7f5] grid place-items-center text-[#4a6c90] text-[10px] font-bold shrink-0">DI</span>
+                        <span class="text-xs text-slate-600 flex-1">Director · libera</span>
+                        <span class="text-[10px] text-slate-400">Todas</span>
                     </div>
                 </div>
             </div>
@@ -104,49 +107,49 @@
     </div>
 </header>
 
-<!-- FLUJO DE ATENCIÓN -->
+<!-- FLUJO DE LA MUESTRA -->
 <section class="bg-grid-light py-20 lg:py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mb-14">
-            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Flujo de atención</span>
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Flujo de la muestra</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
-                Del ingreso del paciente hasta la atención
+                De la orden al resultado liberado
             </h2>
             <p class="text-lg text-slate-600">
-                Cada paso queda registrado, y el paciente siempre sabe en qué punto está.
+                Cada paso queda firmado con quién lo hizo y a qué hora. Se consulta completo en la Trazabilidad de la orden.
             </p>
         </div>
 
         <div class="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
                 <div class="w-11 h-11 rounded-xl bg-[#dbe7f5] grid place-items-center mb-4 text-[#4a6c90] font-bold text-sm">01</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Paciente</h3>
-                <p class="text-slate-500 text-sm">Llega a la institución</p>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Orden</h3>
+                <p class="text-slate-500 text-sm">Paciente y exámenes</p>
             </div>
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
                 <div class="w-11 h-11 rounded-xl bg-[#dcdcef] grid place-items-center mb-4 text-[#6b6b9c] font-bold text-sm">02</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Genera turno</h3>
-                <p class="text-slate-500 text-sm">Según el servicio</p>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Toma</h3>
+                <p class="text-slate-500 text-sm">Etiqueta e identidad</p>
             </div>
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
-                <div class="w-11 h-11 rounded-xl bg-[#f0ece5] grid place-items-center mb-4 text-[#8a7d68] font-bold text-sm">03</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Sala de espera</h3>
-                <p class="text-slate-500 text-sm">Ve su turno en pantalla</p>
+                <div class="w-11 h-11 rounded-xl bg-[#cfe6df] grid place-items-center mb-4 text-[#4b7c68] font-bold text-sm">03</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Recepción</h3>
+                <p class="text-slate-500 text-sm">Se acepta o se rechaza</p>
             </div>
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
-                <div class="w-11 h-11 rounded-xl bg-[#cfe6df] grid place-items-center mb-4 text-[#4b7c68] font-bold text-sm">04</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Llamado</h3>
-                <p class="text-slate-500 text-sm">En tiempo real</p>
+                <div class="w-11 h-11 rounded-xl bg-[#f0ece5] grid place-items-center mb-4 text-[#8a7d68] font-bold text-sm">04</div>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Procesamiento</h3>
+                <p class="text-slate-500 text-sm">Se digita el resultado</p>
             </div>
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
                 <div class="w-11 h-11 rounded-xl bg-[#dbe7f5] grid place-items-center mb-4 text-[#4a6c90] font-bold text-sm">05</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Módulo</h3>
-                <p class="text-slate-500 text-sm">Se dirige al punto</p>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Validación</h3>
+                <p class="text-slate-500 text-sm">Otra persona lo firma</p>
             </div>
             <div class="lift rounded-2xl bg-white border border-slate-200 p-6">
                 <div class="w-11 h-11 rounded-xl bg-[#cfe6df] grid place-items-center mb-4 text-[#4b7c68] font-bold text-sm">06</div>
-                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Atención</h3>
-                <p class="text-slate-500 text-sm">Registro del cierre</p>
+                <h3 class="font-bold text-slate-800 mb-1.5 text-[15px]">Liberación</h3>
+                <p class="text-slate-500 text-sm">Visible para el paciente</p>
             </div>
         </div>
     </div>
@@ -158,7 +161,7 @@
         <div class="max-w-3xl mb-14">
             <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Funcionalidades</span>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-4">
-                Lo que incluye Asistia
+                Lo que incluye Arthemis
             </h2>
         </div>
 
@@ -166,61 +169,62 @@
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 100-6 3 3 0 000 6z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Gestión de turnos</h3>
-                <p class="text-slate-600 text-[15px]">Crea y administra turnos de forma organizada.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Permisos por rol y por sede</h3>
+                <p class="text-slate-600 text-[15px]">Un rol define qué módulos puede usar; la sede asignada define qué datos ve. Ambos filtros se aplican siempre.</p>
             </article>
 
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0118 15.5V11a6 6 0 00-9-5.2V5a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2v-.5"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Llamado en tiempo real</h3>
-                <p class="text-slate-600 text-[15px]">Visualiza los llamados desde las pantallas.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Validación cruzada</h3>
+                <p class="text-slate-600 text-[15px]">Quien procesa un resultado no puede validarlo. Hace falta una segunda mirada antes de que salga del laboratorio.</p>
             </article>
 
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#dcdcef] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#6b6b9c]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v4m0 4h.01M10.29 3.86l-8.18 14.14A2 2 0 004.18 21h15.64a2 2 0 001.73-3l-8.18-14.14a2 2 0 00-3.46 0z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Pantallas y app para TV</h3>
-                <p class="text-slate-600 text-[15px]">Muestra turnos y llamados en televisores o pantallas.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Alertas de valores críticos</h3>
+                <p class="text-slate-600 text-[15px]">Un crítico no se libera hasta que quede registrado a quién se le comunicó.</p>
             </article>
 
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#f0ece5] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#8a7d68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.5 0 1 .2 1.4.6l7 7a2 2 0 010 2.8l-7 7a2 2 0 01-2.8 0l-7-7A2 2 0 013 12V7a4 4 0 014-4z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6H5v6h4zm6 0V5h-4v14h4zm6 0v-9h-4v9h4z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Múltiples servicios</h3>
-                <p class="text-slate-600 text-[15px]">Administra diferentes servicios y módulos de atención.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Control de calidad</h3>
+                <p class="text-slate-600 text-[15px]">Sueros control, corridas y reglas de Westgard. Una corrida rechazada bloquea el examen en ese equipo.</p>
             </article>
 
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#dbe7f5] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#4a6c90]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Múltiples sedes</h3>
-                <p class="text-slate-600 text-[15px]">Para organizaciones que administran varias sedes.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Interfaz con equipos</h3>
+                <p class="text-slate-600 text-[15px]">Analizadores conectados con mapeo de exámenes y bitácora. Sin el mapeo, ningún resultado entra solo.</p>
             </article>
 
             <article class="relative accent-top lift rounded-2xl bg-white border border-slate-200 p-7 overflow-hidden">
                 <div class="w-[52px] h-[52px] rounded-2xl bg-[#cfe6df] grid place-items-center mb-5">
                     <svg class="w-6 h-6 text-[#4b7c68]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6H5v6h4zm6 0V5h-4v14h4zm6 0v-9h-4v9h4z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 14l2 2 4-4m-9 9h10a2 2 0 002-2V7a2 2 0 00-2-2H9a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                     </svg>
                 </div>
-                <h3 class="text-lg font-bold text-slate-800 mb-2">Estadísticas</h3>
-                <p class="text-slate-600 text-[15px]">Información sobre la atención y el comportamiento de los turnos.</p>
+                <h3 class="text-lg font-bold text-slate-800 mb-2">Facturación y RIPS</h3>
+                <p class="text-slate-600 text-[15px]">Convenios, tarifarios por entidad, cartera y generación de lotes RIPS a partir de órdenes ya validadas.</p>
             </article>
         </div>
     </div>
@@ -231,34 +235,34 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="rounded-2xl bg-white/85 backdrop-blur border border-white p-8 order-2 lg:order-1">
-                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-5">CONTROL DE ACCESO POR ROL</p>
+                <p class="text-xs font-semibold text-slate-500 tracking-wide mb-5">ALGUNOS DE LOS ROLES</p>
                 <div class="space-y-3">
                     <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
-                        <span class="w-9 h-9 rounded-lg bg-[#dbe7f5] grid place-items-center text-[#4a6c90] text-xs font-bold shrink-0">AD</span>
+                        <span class="w-9 h-9 rounded-lg bg-[#dbe7f5] grid place-items-center text-[#4a6c90] text-xs font-bold shrink-0">DI</span>
                         <div class="flex-1">
-                            <p class="text-sm font-semibold text-slate-700">Administrador</p>
-                            <p class="text-xs text-slate-500">Configuración, sedes y reportes</p>
+                            <p class="text-sm font-semibold text-slate-700">Director de laboratorio</p>
+                            <p class="text-xs text-slate-500">Libera resultados · doble factor</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
-                        <span class="w-9 h-9 rounded-lg bg-[#cfe6df] grid place-items-center text-[#4b7c68] text-xs font-bold shrink-0">MO</span>
+                        <span class="w-9 h-9 rounded-lg bg-[#cfe6df] grid place-items-center text-[#4b7c68] text-xs font-bold shrink-0">BA</span>
                         <div class="flex-1">
-                            <p class="text-sm font-semibold text-slate-700">Módulo de atención</p>
-                            <p class="text-xs text-slate-500">Llamar y cerrar turnos</p>
+                            <p class="text-sm font-semibold text-slate-700">Bacteriólogo</p>
+                            <p class="text-xs text-slate-500">Procesa y valida (nunca lo propio)</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
                         <span class="w-9 h-9 rounded-lg bg-[#dcdcef] grid place-items-center text-[#6b6b9c] text-xs font-bold shrink-0">RE</span>
                         <div class="flex-1">
                             <p class="text-sm font-semibold text-slate-700">Recepción</p>
-                            <p class="text-xs text-slate-500">Generar turnos</p>
+                            <p class="text-xs text-slate-500">Órdenes, pacientes y entidades</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-3 rounded-xl bg-[#f6f9fc] p-3.5">
-                        <span class="w-9 h-9 rounded-lg bg-[#f0ece5] grid place-items-center text-[#8a7d68] text-xs font-bold shrink-0">PA</span>
+                        <span class="w-9 h-9 rounded-lg bg-[#f0ece5] grid place-items-center text-[#8a7d68] text-xs font-bold shrink-0">AU</span>
                         <div class="flex-1">
-                            <p class="text-sm font-semibold text-slate-700">Pantalla</p>
-                            <p class="text-xs text-slate-500">Solo visualización</p>
+                            <p class="text-sm font-semibold text-slate-700">Auditor</p>
+                            <p class="text-xs text-slate-500">Solo lectura sobre todo el sistema</p>
                         </div>
                     </div>
                 </div>
@@ -267,20 +271,71 @@
             <div class="order-1 lg:order-2">
                 <span class="product-tag mb-4" style="background:rgba(255,255,255,.75)">Seguridad de la información</span>
                 <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-5">
-                    Cada usuario ve solo lo que le corresponde
+                    Cada persona ve exactamente lo que su rol permite
                 </h2>
                 <p class="text-lg text-slate-600 mb-6">
-                    En una institución de salud la información es sensible. Asistia aplica buenas prácticas
-                    de seguridad y limita el acceso según el rol de cada persona.
+                    Arthemis define trece roles, cada uno con el conjunto exacto de permisos que su función necesita.
+                    Ocultar un botón no es seguridad: el servidor vuelve a comprobar el permiso en cada petición, así
+                    que quien llega a una pantalla que no le corresponde no ve datos, ve un aviso de acceso denegado.
                 </p>
                 <ul class="feature-list">
-                    <li>Perfiles y permisos diferenciados por rol</li>
-                    <li>Administración independiente por sede</li>
-                    <li>Registro de las operaciones realizadas</li>
-                    <li>Cifrado de la información en tránsito</li>
-                    <li>Copias de seguridad periódicas</li>
+                    <li>Diez acciones posibles por módulo: ver, crear, editar, anular, validar, liberar y más</li>
+                    <li>Doble factor obligatorio para administración, dirección y superadministración</li>
+                    <li>Aislamiento por sede: el permiso y la sede se filtran siempre juntos</li>
+                    <li>Manual de roles generado desde los permisos reales, nunca escrito a mano</li>
+                    <li>Bitácora de auditoría: quién hizo qué, cuándo, desde dónde y qué cambió</li>
                 </ul>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- REGLAS -->
+<section class="bg-grid-light py-20 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+            <span class="product-tag mb-4" style="background:#eaf1f9;border-color:#dbe7f5">Reglas que no dependen del rol</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800">
+                Límites que aplican incluso a quien tiene todos los permisos
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#dbe7f5] grid place-items-center mb-5 text-[#4a6c90] font-bold">01</div>
+                <h3 class="font-bold text-slate-800 mb-2">Quien procesa no valida</h3>
+                <p class="text-slate-600 text-[15px]">Un resultado no lo firma quien lo registró, aunque tenga el permiso.</p>
+            </article>
+
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#dcdcef] grid place-items-center mb-5 text-[#6b6b9c] font-bold">02</div>
+                <h3 class="font-bold text-slate-800 mb-2">Crítico notificado antes de liberar</h3>
+                <p class="text-slate-600 text-[15px]">Sin registrar a quién se avisó, el resultado no se puede liberar.</p>
+            </article>
+
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#cfe6df] grid place-items-center mb-5 text-[#4b7c68] font-bold">03</div>
+                <h3 class="font-bold text-slate-800 mb-2">Nada se borra</h3>
+                <p class="text-slate-600 text-[15px]">Órdenes, resultados y facturas se anulan con motivo; el registro anterior se conserva.</p>
+            </article>
+
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#f0ece5] grid place-items-center mb-5 text-[#8a7d68] font-bold">04</div>
+                <h3 class="font-bold text-slate-800 mb-2">Control rechazado bloquea el examen</h3>
+                <p class="text-slate-600 text-[15px]">Si un control de calidad se rechaza, ese examen deja de procesar en ese equipo.</p>
+            </article>
+
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#dbe7f5] grid place-items-center mb-5 text-[#4a6c90] font-bold">05</div>
+                <h3 class="font-bold text-slate-800 mb-2">Cuentas sin contraseña al nacer</h3>
+                <p class="text-slate-600 text-[15px]">Quien crea una cuenta no conoce su clave: se activa por restablecimiento, contra el correo del titular.</p>
+            </article>
+
+            <article class="lift rounded-2xl bg-white border border-slate-200 p-7">
+                <div class="w-12 h-12 rounded-xl bg-[#dcdcef] grid place-items-center mb-5 text-[#6b6b9c] font-bold">06</div>
+                <h3 class="font-bold text-slate-800 mb-2">Cada acción queda firmada</h3>
+                <p class="text-slate-600 text-[15px]">Quién creó, tomó, procesó, validó y liberó, con su hora, disponible en la Trazabilidad.</p>
+            </article>
         </div>
     </div>
 </section>
@@ -290,11 +345,11 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <span class="product-tag mb-5" style="background:#ffffff;border-color:#cfe6df">El resultado</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-6">
-            Menos espera. Mejor organización. Mayor control de la atención.
+            Menos riesgo operativo. Trazabilidad completa. Control real por sede.
         </h2>
         <p class="text-lg text-slate-600">
-            El paciente sabe en qué punto está y el equipo tiene visibilidad de toda la operación
-            en tiempo real, sin depender de listas en papel ni de llamados a viva voz.
+            El laboratorio gana un sistema donde cada permiso, cada validación y cada resultado liberado
+            queda respaldado, sin depender de que alguien recuerde seguir el procedimiento.
         </p>
     </div>
 </section>
@@ -303,10 +358,10 @@
 <section class="bg-cta py-20 lg:py-24">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 mb-5">
-            Lleva la gestión de turnos de tu institución al siguiente nivel
+            Lleva la gestión de tu laboratorio clínico al siguiente nivel
         </h2>
         <p class="text-lg text-slate-600 mb-9">
-            Solicita una demostración y te mostramos cómo se adapta Asistia a tus servicios y sedes.
+            Solicita una demostración y te mostramos cómo se adapta Arthemis a tus sedes, tus áreas y tu equipo.
         </p>
         <div class="flex flex-wrap gap-3 justify-center">
             <a href="contacto.html" class="btn-pastel">Solicitar demostración</a>
@@ -370,7 +425,7 @@
         <div class="bg-[#dbe7f5] px-4 py-3.5 flex justify-between items-center">
             <div>
                 <h3 class="font-bold text-slate-800 text-[15px]">Asistente</h3>
-                <p class="text-xs text-slate-500">¿Preguntas sobre Asistia?</p>
+                <p class="text-xs text-slate-500">¿Preguntas sobre Arthemis?</p>
             </div>
             <button id="chat-close" class="text-slate-500 hover:text-slate-800 p-1" aria-label="Cerrar">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -380,7 +435,7 @@
         </div>
         <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-3 bg-[#f6f9fc]">
             <div class="bg-white rounded-xl p-3 max-w-[85%] border border-slate-100">
-                <p class="text-sm text-slate-600">Hola. Puedo contarte sobre la gestión de turnos, las pantallas, el manejo de sedes o cómo solicitar una demostración.</p>
+                <p class="text-sm text-slate-600">Hola. Puedo contarte sobre los roles y permisos, el control de calidad, la facturación o cómo solicitar una demostración.</p>
             </div>
         </div>
         <form id="chat-form" class="p-3 border-t border-slate-200 flex gap-2">
